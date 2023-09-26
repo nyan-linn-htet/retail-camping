@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Camping Company</title>
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .nav-menu ul a:first-child::after {
+            width: 0%;
+        }
+        .nav-menu ul a:hover::after {
+            width: 100%;
+        }
+        .nav-menu ul a:nth-child(7)::after {
+            width: 100%;
+        }
+        @media(max-width: 992px) {
+            .nav-menu ul a:first-child {
+                color: white;
+            }
+            .nav-menu ul a:nth-child(7) {
+                color: black;
+            }
+            .nav-menu ul a:hover {
+                color: black;
+            }
+            .nav-menu ul a::after {
+                background-color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">RCC</a>
+                    <div class="img-box">
+                        <img src="imgs/logo.png" alt="LOGO IMG" class="logo-img">
+                    </div>
+                </div>
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox" class="toggle">
+                    <span class="bars" id="bar1"></span>
+                    <span class="bars" id="bar2"></span>
+                    <span class="bars" id="bar3"></span>
+                </label>
+                <div class="nav-menu">
+                    <ul>
+                        <a href="index.html">
+                            <li>Home</li>
+                        </a>
+                        <a href="#show-dropdown">
+                            <li>Camping Equipment 
+                                <i class="fas fa-chevron-down dropdown-icon"></i>
+                            </li>
+                        </a>
+                        <ul class="dropdown" id="show-dropdown">
+                            <a href="tents.html">
+                                <li>Tents</li>
+                            </a>
+                            <a href="sleeping.html">
+                                <li>Sleeping</li>
+                            </a>
+                            <a href="cookware.html">
+                                <li>Cookware</li>
+                            </a>
+                            <a href="dinner.html">
+                                <li>Dinner Set</li>
+                            </a>
+                            <a href="coolbox.html">
+                                <li>Cool Box</li>
+                            </a>
+                            <a href="bottles.html">
+                                <li>Bottles</li>
+                            </a>
+                            <a href="lighting.html">
+                                <li>Lighting</li>
+                            </a>
+                        </ul>
+                        <a href="furniture.html">
+                            <li>Furniture</li>
+                        </a>
+                        <a href="offers-and-packages.html">
+                            <li>Offers and Packages</li>
+                        </a>
+                        <a href="reviews.html">
+                            <li>Reviews</li>
+                        </a>
+                        <a href="basket.html">
+                            <li>Basket</li>
+                        </a>
+                    </u>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container pt-90">
+        <h1 class="camping-eq-title">Your Basket</h1>
+        <div class="basket">
+            <div class="order-items">
+                <div class="item heading">
+                    <span>Product</span>
+                    <span>Price</span>
+                    <span class="quan-title">Quantity</span>
+                    <span>Total</span>
+                    <span></span>
+                </div>
+                <div class="item">
+                    <div>
+                        <div class="img-box">
+                            <img src="imgs/bottles/bottle1.jpeg" alt="Yeti Bottle">
+                        </div>
+                        <span class="title">Yeti</span>
+                        <p>Rambler 64oz (1.9L) Bottle</p>
+                    </div>
+                    <p>$59</p>
+                    <div class="quantity">
+                        <a href="#quantity-button-1"><span class="num">1</span> <i class="fa-solid fa-chevron-down down"></i></a>
+                        <div id="quantity-button-1" class="btn">
+                            <div class="plus-minus">
+                                <div class="minus"><i class="fas fa-minus"></i></div>
+                                <span class="pipe">|</span>
+                                <div class="plus"><i class="fas fa-plus"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>$59</p>
+                </div>
+                <hr>
+                <div class="item">
+                    <div>
+                        <div class="img-box">
+                            <img src="imgs/tents/5tent.jpeg" alt="5 men tent">
+                        </div>
+                        <span class="title">Outwell</span>
+                        <p>Double Dreamer TC 4 Tent</p>
+                    </div>
+                    <p>$999</p>
+                    <div class="quantity">
+                        <a href="#quantity-button-2"><span class="num">1</span> <i class="fa-solid fa-chevron-down down"></i></a>
+                        <div id="quantity-button-2" class="btn">
+                            <div class="plus-minus">
+                                <div class="minus"><i class="fas fa-minus"></i></div>
+                                <span class="pipe">|</span>
+                                <div class="plus"><i class="fas fa-plus"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>$999</p>
+                </div>
+                <hr>
+                <div class="item">
+                    <div>
+                        <div class="img-box">
+                            <img src="imgs/cookware/lantern3.jpeg" alt="Outdoor Revolution 5 in 1 Lumi-Fan Lite">
+                        </div>
+                        <span class="title">Outdoor Revolution</span>
+                        <p>5 in 1 Lumi-Fan Lite</p>
+                    </div>
+                    <p>$25</p>
+                    <div class="quantity">
+                        <a href="#quantity-button-3"><span class="num">2</span> <i class="fa-solid fa-chevron-down down"></i></a>
+                        <div id="quantity-button-3" class="btn">
+                            <div class="plus-minus">
+                                <div class="minus"><i class="fas fa-minus"></i></div>
+                                <span class="pipe">|</span>
+                                <div class="plus"><i class="fas fa-plus"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>$50</p>
+                </div>
+            </div>
+            <div class="payment">
+                <h1 class="title">Your Order</h1>
+                <div class="voucher">
+                    <div class="input-container">
+                        <input type="text" name="text" class="input" placeholder="Enter a voucher code">
+                        <div class="highlight"></div>
+                    </div>
+                    <button>Apply</button>
+                </div>
+                <div class="text">
+                    <span>Sub Total: </span>
+                    <span>$1108</span>
+                </div>
+                <div class="text">
+                    <span>Delivery Fee: </span>
+                    <span>$15</span>
+                </div>
+                <div class="text">
+                    <span>Order Total: </span>
+                    <span>$1123</span>
+                </div>
+                <div class="btn">Payment <i class="far fa-credit-card pay"></i></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="text">
+		    <p>&copy;opyRight Reserved 2023.</p>
+            <div class="icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+            <p>This website developed by Nyan Linn Htet not commercial website only for educational purpose.</p>
+        </div>
+    </footer>
+</body>
+</html>

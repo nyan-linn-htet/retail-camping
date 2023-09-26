@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Camping Company</title>
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .nav-menu ul a:first-child::after {
+            width: 0%;
+        }
+        .nav-menu ul a:hover::after {
+            width: 100%;
+        }
+        .nav-menu ul a:nth-child(6)::after {
+            width: 100%;
+        }
+        @media(max-width: 992px) {
+            .nav-menu ul a:first-child {
+                color: white;
+            }
+            .nav-menu ul a:nth-child(6) {
+                color: black;
+            }
+            .nav-menu ul a:hover {
+                color: black;
+            }
+            .nav-menu ul a::after {
+                background-color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">RCC</a>
+                    <div class="img-box">
+                        <img src="imgs/logo.png" alt="LOGO IMG" class="logo-img">
+                    </div>
+                </div>
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox" class="toggle">
+                    <span class="bars" id="bar1"></span>
+                    <span class="bars" id="bar2"></span>
+                    <span class="bars" id="bar3"></span>
+                </label>
+                <div class="nav-menu">
+                    <ul>
+                        <a href="index.html">
+                            <li>Home</li>
+                        </a>
+                        <a href="#show-dropdown">
+                            <li>Camping Equipment 
+                                <i class="fas fa-chevron-down dropdown-icon"></i>
+                            </li>
+                        </a>
+                        <ul class="dropdown" id="show-dropdown">
+                            <a href="tents.html">
+                                <li>Tents</li>
+                            </a>
+                            <a href="sleeping.html">
+                                <li>Sleeping</li>
+                            </a>
+                            <a href="cookware.html">
+                                <li>Cookware</li>
+                            </a>
+                            <a href="dinner.html">
+                                <li>Dinner Set</li>
+                            </a>
+                            <a href="coolbox.html">
+                                <li>Cool Box</li>
+                            </a>
+                            <a href="bottles.html">
+                                <li>Bottles</li>
+                            </a>
+                            <a href="lighting.html">
+                                <li>Lighting</li>
+                            </a>
+                        </ul>
+                        <a href="furniture.html">
+                            <li>Furniture</li>
+                        </a>
+                        <a href="offers-and-packages.html">
+                            <li>Offers and Packages</li>
+                        </a>
+                        <a href="reviews.html">
+                            <li>Reviews</li>
+                        </a>
+                        <a href="basket.html">
+                            <li>Basket</li>
+                        </a>
+                    </u>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="pt-90 review-container-box">
+        <h1 class="camping-eq-title">Reviews</h1>
+        <div class="review-container">
+            <div class="review-item" id="review1">
+                <div class="item">
+                    <div class="img-box">
+                        <img src="imgs/tents/4tent.jpeg" alt="4 men tent">
+                    </div>
+                    <div class="text">
+                        <span class="title">Robens</span>
+                        <p class="description">Double Dreamer TC 4 Tent</p>
+                        <span class="price">$699</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="rating">
+                    <div class="rate-box">
+                        <span class="rate">5.0</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="total-review">(12 reviews)</span>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress">
+                            <div class="num"><span>5</span><i class="fas fa-star"></i></div>
+                            <div class="bar">
+                                <div class="percent" id="per5"></div>
+                            </div>
+                            <div>19</div>
+                        </div>
+                        <div class="progress">
+                            <div class="num"><span>4</span><i class="fas fa-star"></i></div>
+                            <div class="bar">
+                                <div class="percent" id="per4"></div>
+                            </div>
+                            <div>7</div>
+                        </div>
+                        <div class="progress">
+                            <div class="num"><span>3</span><i class="fas fa-star"></i>
+                            </div>
+                            <div class="bar">
+                                <div class="percent" id="per3"></div>
+                            </div>
+                            <div>5</div>
+                        </div>
+                        <div class="progress">
+                            <div class="num"><span>2</span><i class="fas fa-star"></i></div>
+                            <div class="bar">
+                                <div class="percent" id="per2"></div>
+                            </div>
+                            <div>3</div>
+                        </div>
+                        <div class="progress">
+                            <div class="num"><span>1</span><i class="fas fa-star"></i></div>
+                            <div class="bar">
+                                <div class="percent" id="per1"></div>
+                            </div>
+                            <div>1</div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="review">
+                    <div class="img-box">
+                        <img src="imgs/persons/person-1.jpg" alt="Person">
+                    </div>
+                    <div class="text">
+                        <span class="name">John Doe</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi sint aut dicta earum amet, sunt officia velit corrupti praesentium odio.
+                        </p>
+                    </div>
+                </div>
+                <div class="navi-icon">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+            <div class="review-item" id="review2">
+                <div class="item">
+                    <div class="img-box">
+                        <img src="imgs/sleeping_bags/bag3.jpeg" alt="easy_camp single bag">
+                    </div>
+                    <div class="text">
+                        <span class="title">Easy Camp</span>
+                        <p>Moon 200 Sleeping Bag</p>
+                        <span class="price">$34</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="rating">
+                    <div class="rate-box">
+                        <span class="rate">4.5</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-stroke"></i>
+                        </div>
+                        <span class="total-review">(7 reviews)</span>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress">
+                            <div class="num"><span>5</span><i class="fas fa-star"></i></div>
+                            <div class="bar">
+                                <div class="percent" id="per5"></div>
+                            </div>
+                            <div>12</div>
+                        </div>
+                        <div class="progress">
+                            <div class="num"><span>4</span><i class="fas fa-star"></i></div>
+                            <div class="bar">
+                                <div class="percent" id="per4"></div>
+                            </div>
+                            <div>4</div>
+                        </div>
+                        <div class="progress">
+                            <div class="num"><span>3</span><i class="fas fa-star"></i>
+                            </div>
+                            <div class="bar">
+                                <div class="percent" id="per3"></div>
+                            </div>
+                            <div>8</div>
+                        </div>
+                        <div class="progress">
+                            <div class="num"><span>2</span><i class="fas fa-star"></i></div>
+                            <div class="bar">
+                                <div class="percent" id="per2"></div>
+                            </div>
+                            <div>3</div>
+                        </div>
+                        <div class="progress">
+                            <div class="num"><span>1</span><i class="fas fa-star"></i></div>
+                            <div class="bar">
+                                <div class="percent" id="per1"></div>
+                            </div>
+                            <div>2</div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="review">
+                    <div class="img-box">
+                        <img src="imgs/persons/person-2.jpg" alt="Person">
+                    </div>
+                    <div class="text">
+                        <span class="name">Alisa</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi sint aut dicta earum amet, sunt officia velit corrupti praesentium odio.
+                        </p>
+                    </div>
+                </div>
+                <div class="navi-icon">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+            <div class="review-item" id="review3">
+                <div class="item">
+                    <div class="img-box">
+                        <img src="imgs/cookware/lantern3.jpeg" alt="Outdoor Revolution 5 in 1 Lumi-Fan Lite">
+                    </div>
+                    <div class="text">
+                        <span class="title">Outdoor Revolution</span>
+                        <p>5 in 1 Lumi-Fan Lite</p>
+                        <span class="price">$25</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="rating">
+                    <div class="rate-box">
+                        <span class="rate">3.5</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-stroke"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <span class="total-review">(10 reviews)</span>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress">
+                            <div class="num"><span>5</span><i class="fas fa-star"></i></div>
+                            <div class="bar">
+                                <div class="percent" id="per5"></div>
+                            </div>
+                            <div>5</div>
+                        </div>
+                        <div class="progress">
+                            <div class="num"><span>4</span><i class="fas fa-star"></i></div>
+                            <div class="bar">
+                                <div class="percent" id="per4"></div>
+                            </div>
+                            <div>7</div>
+                        </div>
+                        <div class="progress">
+                            <div class="num"><span>3</span><i class="fas fa-star"></i>
+                            </div>
+                            <div class="bar">
+                                <div class="percent" id="per3"></div>
+                            </div>
+                            <div>3</div>
+                        </div>
+                        <div class="progress">
+                            <div class="num"><span>2</span><i class="fas fa-star"></i></div>
+                            <div class="bar">
+                                <div class="percent" id="per2"></div>
+                            </div>
+                            <div>4</div>
+                        </div>
+                        <div class="progress">
+                            <div class="num"><span>1</span><i class="fas fa-star"></i></div>
+                            <div class="bar">
+                                <div class="percent" id="per1"></div>
+                            </div>
+                            <div>6</div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="review">
+                    <div class="img-box">
+                        <img src="imgs/persons/person-3.jpg" alt="Person">
+                    </div>
+                    <div class="text">
+                        <span class="name">Mary</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi sint aut dicta earum amet, sunt officia velit corrupti praesentium odio.
+                        </p>
+                    </div>
+                </div>
+                <div class="navi-icon">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+            <div class="review-item" id="review4">
+                <div class="item">
+                    <div class="img-box">
+                        <img src="imgs/chairs/chair3.jpeg" alt="Outwell Grenada Lake Chair">
+                    </div>
+                    <div class="text">
+                        <span class="title">Outwell</span>
+                        <p>Grenada Lake Chair</p>
+                        <span class="price">$114</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="rating">
+                    <div class="rate-box">
+                        <span class="rate">4.0</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <span class="total-review">(15 reviews)</span>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress">
+                            <div class="num"><span>5</span><i class="fas fa-star"></i></div>
+                            <div class="bar">
+                                <div class="percent" id="per5"></div>
+                            </div>
+                            <div>14</div>
+                        </div>
+                        <div class="progress">
+                            <div class="num"><span>4</span><i class="fas fa-star"></i></div>
+                            <div class="bar">
+                                <div class="percent" id="per4"></div>
+                            </div>
+                            <div>10</div>
+                        </div>
+                        <div class="progress">
+                            <div class="num"><span>3</span><i class="fas fa-star"></i>
+                            </div>
+                            <div class="bar">
+                                <div class="percent" id="per3"></div>
+                            </div>
+                            <div>8</div>
+                        </div>
+                        <div class="progress">
+                            <div class="num"><span>2</span><i class="fas fa-star"></i></div>
+                            <div class="bar">
+                                <div class="percent" id="per2"></div>
+                            </div>
+                            <div>5</div>
+                        </div>
+                        <div class="progress">
+                            <div class="num"><span>1</span><i class="fas fa-star"></i></div>
+                            <div class="bar">
+                                <div class="percent" id="per1"></div>
+                            </div>
+                            <div>4</div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="review">
+                    <div class="img-box">
+                        <img src="imgs/persons/person-4.jpg" alt="Person">
+                    </div>
+                    <div class="text">
+                        <span class="name">Jane</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi sint aut dicta earum amet, sunt officia velit corrupti praesentium odio.
+                        </p>
+                    </div>
+                </div>
+                <div class="navi-icon">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="text">
+		    <p>&copy;opyRight Reserved 2023.</p>
+            <div class="icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+            <p>This website developed by Nyan Linn Htet not commercial website only for educational purpose.</p>
+        </div>
+    </footer>
+</body>
+</html>

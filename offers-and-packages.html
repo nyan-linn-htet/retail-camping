@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Camping Company</title>
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .nav-menu ul > a:first-child::after {
+            width: 0%;
+        }
+        .nav-menu ul > a:hover::after {
+            width: 100%;
+        }
+        .nav-menu ul > a:nth-child(5)::after {
+            width: 100%;
+        }
+        @media(max-width: 992px) {
+            .nav-menu ul > a:first-child {
+                color: white;
+            }
+            .nav-menu ul > a:nth-child(5) {
+                color: #000;
+            }
+            .nav-menu ul > a:hover {
+                color: #000;
+            }
+            .nav-menu ul .dropdown a:hover {
+                color: #000;
+            }
+            .nav-menu ul > a::after {
+                background-color: #000;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">RCC</a>
+                    <div class="img-box">
+                        <img src="imgs/logo.png" alt="LOGO IMG" class="logo-img">
+                    </div>
+                </div>
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox" class="toggle">
+                    <span class="bars" id="bar1"></span>
+                    <span class="bars" id="bar2"></span>
+                    <span class="bars" id="bar3"></span>
+                </label>
+                <div class="nav-menu">
+                    <ul>
+                        <a href="index.html">
+                            <li>Home</li>
+                        </a>
+                        <a href="#show-dropdown">
+                            <li>Camping Equipment 
+                                <i class="fas fa-chevron-down dropdown-icon"></i>
+                            </li>
+                        </a>
+                        <div class="dropdown" id="show-dropdown">
+                            <a href="tents.html">
+                                <li>Tents</li>
+                            </a>
+                            <a href="sleeping.html">
+                                <li>Sleeping</li>
+                            </a>
+                            <a href="cookware.html">
+                                <li>Cookware</li>
+                            </a>
+                            <a href="dinner.html">
+                                <li>Dinner Set</li>
+                            </a>
+                            <a href="coolbox.html">
+                                <li>Cool Box</li>
+                            </a>
+                            <a href="bottles.html">
+                                <li>Bottles</li>
+                            </a>
+                            <a href="lighting.html">
+                                <li>Lighting</li>
+                            </a>
+                        </div>
+                        <a href="furniture.html">
+                            <li>Furniture</li>
+                        </a>
+                        <a href="offers-and-packages.html">
+                            <li>Offers and Packages</li>
+                        </a>
+                        <a href="reviews.html">
+                            <li>Reviews</li>
+                        </a>
+                        <a href="basket.html">
+                            <li>Basket</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container pt-90">
+        <h1 class="camping-eq-title">Offers</h1>
+        <div class="equip-container offers">
+            <div class="camp-equip">
+
+                <!-- Offers -->
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/tents/1tent(2).jpg" alt="1 man tent">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Easy Camp</span>
+                        <p>Geminga 100 Compact Tent 2023</p>
+                        <span class="price">$59</span>
+                    </div>
+                    <div class="percent">20% Off</div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <embed src="imgs/tents/3tent.jpeg" alt="3 men tent">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Outwell</span>
+                        <p>Elmdale 3PA Air Tent 2023</p>
+                        <span class="dis-price">$512</span>
+                        <span class="offer-price">$640</span>
+                    </div>
+                    <div class="percent">20% Off</div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/sleeping_bags/bag6.jpeg" alt="Robens double bag">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Robens</span>
+                        <p>Basecamp Double Sleeping Bag</p>
+                        <span class="dis-price">$119.2</span>
+                        <span class="offer-price">$149</span>
+                    </div>
+                    <div class="percent">20% Off</div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/mat5.jpeg" alt="Easy Camp Back Gammon Picnic Rug">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Easy Camp</span>
+                        <p>Back Gammon Picnic Rug</p>
+                        <span class="dis-price">$16.8</span>
+                        <span class="offer-price">$21</span>
+                    </div>
+                    <div class="percent">20% Off</div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/cook1.jpeg" alt="Easy Camp Cook Set">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Easy Camp</span>
+                        <p>Adventure Cook Set</p>
+                        <span class="dis-price">$23.2</span>
+                        <span class="offer-price">$29</span>
+                    </div>
+                    <div class="percent">20% Off</div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/cook12.jpeg" alt="Outwell Collaps Kettle">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Outwell</span>
+                        <p>Outwell Collaps Kettle 1.5L Navy</p>
+                        <span class="dis-price">$31.2</span>
+                        <span class="offer-price">$39</span>
+                    </div>
+                    <div class="percent">20% Off</div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/cook16.jpeg" alt="Redwood Leisure Portable Gas Stove">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Redwood</span>
+                        <p>Leisure Portable Gas Stove</p>
+                        <span class="dis-price">$19.2</span>
+                        <span class="offer-price">$24</span>
+                    </div>
+                    <div class="percent">20% Off</div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/box3.jpeg" alt="Igloo BMX 72QT Cooler">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Igloo</span>
+                        <p>BMX 72QT Cooler</p>
+                        <span class="dis-price">$159.2</span>
+                        <span class="offer-price">$199</span>
+                    </div>
+                    <div class="percent">20% Off</div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/bottles/bottle1.jpeg" alt="Yeti bottle">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Yeti</span>
+                        <p>Rambler 64oz (1.9L) Bottle</p>
+                        <span class="dis-price">$47.2</span>
+                        <span class="offer-price">$59</span>
+                    </div>
+                    <div class="percent">20% Off</div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/bottles/bottle8.jpeg" alt="Klean Kanteen bottle">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Klean Kanteen</span>
+                        <p>Classic 27oz Tiger Lily Bottle</p>
+                        <span class="price">$19</span>
+                    </div>
+                    <div class="percent">20% off</div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/lantern5.jpeg" alt="Easy Camp Pyro Artificial Flame Lantern">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Easy Camp</span>
+                        <p>Pyro Artificial Flame Lantern</p>
+                        <span class="dis-price">$12.8</span>
+                        <span class="offer-price">$16</span>
+                    </div>
+                    <div class="percent">20% Off</div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/chairs/chair5.jpeg" alt="Outwell Catamarca Arm Chair XL">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Outwell</span>
+                        <p>Catamarca Arm Chair XL</p>
+                        <span class="dis-price">$16.8</span>
+                        <span class="offer-price">$39</span>
+                    </div>
+                    <div class="percent">20% Off</div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+            </div>
+        </div>
+        <h1 class="camping-eq-title">Packages</h1>
+        <div class="equip-container offers">
+            <div class="camp-equip">
+                <!-- Packages -->
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/packages/package1.jpg" alt="Package 1">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Package One</span>
+                        <p>For summer season</p>
+                        <span class="price">$2599</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/packages/package2.webp" alt="Package 2">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Package Two</span>
+                        <p>For rainy season</p>
+                        <span class="price">$2799</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/packages/package3.jpg" alt="Package 3">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Package Three</span>
+                        <p>For winter season</p>
+                        <span class="price">$1699</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/packages/package4.webp" alt="Package 4">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Package Four</span>
+                        <p>All time</p>
+                        <span class="price">$3999</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="text">
+		    <p>&copy;opyRight Reserved 2023.</p>
+            <div class="icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+            <p>This website developed by Nyan Linn Htet not commercial website only for educational purpose.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Camping Company</title>
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .nav-menu ul > a:first-child::after {
+            width: 0%;
+        }
+        .nav-menu ul > a:hover::after {
+            width: 100%;
+        }
+        .nav-menu ul > a:nth-child(2)::after {
+            width: 100%;
+        }
+        @media(max-width: 992px) {
+            .nav-menu ul > a:first-child {
+                color: white;
+            }
+            .nav-menu ul > a:nth-child(2) {
+                color: #000;
+            }
+            .nav-menu ul .dropdown > a:nth-child(6) {
+                color: #000;
+            }
+            .nav-menu ul > a:hover {
+                color: #000;
+            }
+            .nav-menu ul .dropdown a:hover {
+                color: #000;
+            }
+            .nav-menu ul > a::after {
+                background-color: #000;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">RCC</a>
+                    <div class="img-box">
+                        <img src="imgs/logo.png" alt="LOGO IMG" class="logo-img">
+                    </div>
+                </div>
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox" class="toggle">
+                    <span class="bars" id="bar1"></span>
+                    <span class="bars" id="bar2"></span>
+                    <span class="bars" id="bar3"></span>
+                </label>
+                <div class="nav-menu">
+                    <ul>
+                        <a href="index.html">
+                            <li>Home</li>
+                        </a>
+                        <a href="#show-dropdown">
+                            <li>Camping Equipment 
+                                <i class="fas fa-chevron-down dropdown-icon"></i>
+                            </li>
+                        </a>
+                        <div class="dropdown" id="show-dropdown">
+                            <a href="tents.html">
+                                <li>Tents</li>
+                            </a>
+                            <a href="sleeping.html">
+                                <li>Sleeping</li>
+                            </a>
+                            <a href="cookware.html">
+                                <li>Cookware</li>
+                            </a>
+                            <a href="tableware.html">
+                                <li>Tableware</li>
+                            </a>
+                            <a href="coolbox.html">
+                                <li>Cool Box</li>
+                            </a>
+                            <a href="bottles.html">
+                                <li>Bottles</li>
+                            </a>
+                            <a href="lighting.html">
+                                <li>Lighting</li>
+                            </a>
+                        </div>
+                        <a href="furniture.html">
+                            <li>Furniture</li>
+                        </a>
+                        <a href="offers-and-packages.html">
+                            <li>Offers and Packages</li>
+                        </a>
+                        <a href="reviews.html">
+                            <li>Reviews</li>
+                        </a>
+                        <a href="basket.html">
+                            <li>Basket</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container pt-90">
+        <h1 class="camping-eq-title">Bottles</h1>
+        <h2 class="camping-eq-subtitle">Presenting 10 bottles within the camping equipment category</h2>
+        <div class="equip-container offers">
+            <div class="camp-equip">
+                <!-- bottle -->
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/bottles/bottle1.jpeg" alt="Yeti bottle">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Yeti</span>
+                        <p>Rambler 64oz (1.9L) Bottle</p>
+                        <span class="price">$59</span>
+                    </div>
+                    <div class="percent">20% off</div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/bottles/bottle8.jpeg" alt="Klean Kanteen bottle">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Klean Kanteen</span>
+                        <p>Classic 27oz Tiger Lily Bottle</p>
+                        <span class="price">$19</span>
+                    </div>
+                    <div class="percent">20% off</div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/bottles/bottle2.jpeg" alt="Summit bottle">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Summit</span>
+                        <p>MyBento 500ml Glass Eco Bottle</p>
+                        <span class="price">$7</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/bottles/bottle3.jpeg" alt="B&CO bottle">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">B&CO</span>
+                        <p>Hamelin 500ml Metallic Bottle</p>
+                        <span class="price">$6</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/bottles/bottle4.jpeg" alt="Pursuit bottle">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Pursuit Fitness</span>
+                        <p>2.2L Pink Gym Bottle</p>
+                        <span class="price">$4</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/bottles/bottle5.png" alt="PMS bottle">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">PMS</span>
+                        <p>Cooler Drinking Bottle 450ml</p>
+                        <span class="price">$3</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/bottles/bottle6.jpeg" alt="Yeti bottle">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Yeti</span>
+                        <p>CRambler 20oz Travel Mug</p>
+                        <span class="price">$34</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/bottles/bottle7.jpeg" alt="Yeti bottle">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Yeti</span>
+                        <p>Rambler 10oz Mug with Lid</p>
+                        <span class="price">$24</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/bottles/bottle9.jpeg" alt="Robens bottle">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Robens</span>
+                        <p>Leaf Flask 0.7L 2023</p>
+                        <span class="price">$11</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/bottles/bottle10.jpeg" alt="Outwell bottle">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Outwell</span>
+                        <p>Taster Vacuum Flask M</p>
+                        <span class="price">$12</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="text">
+		    <p>&copy;opyRight Reserved 2023.</p>
+            <div class="icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+            <p>This website developed by Nyan Linn Htet not commercial website only for educational purpose.</p>
+        </div>
+    </footer>
+</body>
+</html>

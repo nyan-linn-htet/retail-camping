@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Camping Company</title>
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .nav-menu ul > a:first-child::after {
+            width: 0%;
+        }
+        .nav-menu ul > a:hover::after {
+            width: 100%;
+        }
+        .nav-menu ul > a:nth-child(2)::after {
+            width: 100%;
+        }
+        @media(max-width: 992px) {
+            .nav-menu ul > a:first-child {
+                color: white;
+            }
+            .nav-menu ul > a:nth-child(2) {
+                color: #000;
+            }
+            .nav-menu ul .dropdown > a:nth-child(7) {
+                color: #000;
+            }
+            .nav-menu ul > a:hover {
+                color: #000;
+            }
+            .nav-menu ul .dropdown a:hover {
+                color: #000;
+            }
+            .nav-menu ul > a::after {
+                background-color: #000;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">RCC</a>
+                    <div class="img-box">
+                        <img src="imgs/logo.png" alt="LOGO IMG" class="logo-img">
+                    </div>
+                </div>
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox" class="toggle">
+                    <span class="bars" id="bar1"></span>
+                    <span class="bars" id="bar2"></span>
+                    <span class="bars" id="bar3"></span>
+                </label>
+                <div class="nav-menu">
+                    <ul>
+                        <a href="index.html">
+                            <li>Home</li>
+                        </a>
+                        <a href="#show-dropdown">
+                            <li>Camping Equipment 
+                                <i class="fas fa-chevron-down dropdown-icon"></i>
+                            </li>
+                        </a>
+                        <div class="dropdown" id="show-dropdown">
+                            <a href="tents.html">
+                                <li>Tents</li>
+                            </a>
+                            <a href="sleeping.html">
+                                <li>Sleeping</li>
+                            </a>
+                            <a href="cookware.html">
+                                <li>Cookware</li>
+                            </a>
+                            <a href="tableware.html">
+                                <li>Tableware</li>
+                            </a>
+                            <a href="coolbox.html">
+                                <li>Cool Box</li>
+                            </a>
+                            <a href="bottles.html">
+                                <li>Bottles</li>
+                            </a>
+                            <a href="lighting.html">
+                                <li>Lighting</li>
+                            </a>
+                        </div>
+                        <a href="furniture.html">
+                            <li>Furniture</li>
+                        </a>
+                        <a href="offers-and-packages.html">
+                            <li>Offers and Packages</li>
+                        </a>
+                        <a href="reviews.html">
+                            <li>Reviews</li>
+                        </a>
+                        <a href="basket.html">
+                            <li>Basket</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container pt-90">
+        <h1 class="camping-eq-title">Lighting</h1>
+        <h2 class="camping-eq-subtitle">Presenting 9 lightings within the camping equipment category</h2>
+        <div class="equip-container offers">
+            <div class="camp-equip">
+                <!-- lantern -->
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/lantern5.jpeg" alt="Easy Camp Pyro Artificial Flame Lantern">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Easy Camp</span>
+                        <p>Pyro Artificial Flame Lantern</p>
+                        <span class="price">$16</span>
+                    </div>
+                    <div class="percent">20% off</div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/lantern1.jpeg" alt="Easy Camp Jackal Camping Lantern">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Easy Camp</span>
+                        <p>Jackal Camping Lantern</p>
+                        <span class="price">$14</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/lantern2.jpeg" alt="Outdoor Revolution Up Lighter Shade">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Outdoor Revolution</span>
+                        <p>Up Lighter Shade</p>
+                        <span class="price">$18</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/lantern3.jpeg" alt="Outdoor Revolution 5 in 1 Lumi-Fan Lite">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Outdoor Revolution</span>
+                        <p>5 in 1 Lumi-Fan Lite</p>
+                        <span class="price">$25</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/lantern4.jpeg" alt="Outdoor Revolution Portable Solar Lantern Square USB">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Outdoor Revolution</span>
+                        <p>Portable Solar Lantern USB</p>
+                        <span class="price">$12</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/lantern6.jpeg" alt="Easy Camp Chameleon Lantern">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Easy Camp</span>
+                        <p>Chameleon Lantern</p>
+                        <span class="price">$22</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/lantern7.jpeg" alt="Camptech Luna 2 In 1 LED Light & Fan">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Camptech</span>
+                        <p>Luna 2 In 1 LED Light & Fan</p>
+                        <span class="price">$16</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/lightchain1.jpeg" alt="Outwell Delta Light Chain">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Outwell</span>
+                        <p>Delta Light Chain</p>
+                        <span class="price">$14</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/lightchain2.jpeg" alt="Easy Camp Globe Light Chain">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Easy Camp</span>
+                        <p>Globe Light Chain</p>
+                        <span class="price">$14</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="text">
+		    <p>&copy;opyRight Reserved 2023.</p>
+            <div class="icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+            <p>This website developed by Nyan Linn Htet not commercial website only for educational purpose.</p>
+        </div>
+    </footer>
+</body>
+</html>

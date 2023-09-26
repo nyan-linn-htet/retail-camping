@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Camping Company</title>
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .nav-menu ul > a:first-child::after {
+            width: 0%;
+        }
+        .nav-menu ul > a:hover::after {
+            width: 100%;
+        }
+        .nav-menu ul > a:nth-child(2)::after {
+            width: 100%;
+        }
+        @media(max-width: 992px) {
+            .nav-menu ul > a:first-child {
+                color: white;
+            }
+            .nav-menu ul > a:nth-child(2) {
+                color: #000;
+            }
+            .nav-menu ul .dropdown > a:nth-child(3) {
+                color: #000;
+            }
+            .nav-menu ul > a:hover {
+                color: #000;
+            }
+            .nav-menu ul .dropdown a:hover {
+                color: #000;
+            }
+            .nav-menu ul > a::after {
+                background-color: #000;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">RCC</a>
+                    <div class="img-box">
+                        <img src="imgs/logo.png" alt="LOGO IMG" class="logo-img">
+                    </div>
+                </div>
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox" class="toggle">
+                    <span class="bars" id="bar1"></span>
+                    <span class="bars" id="bar2"></span>
+                    <span class="bars" id="bar3"></span>
+                </label>
+                <div class="nav-menu">
+                    <ul>
+                        <a href="index.html">
+                            <li>Home</li>
+                        </a>
+                        <a href="#show-dropdown">
+                            <li>Camping Equipment 
+                                <i class="fas fa-chevron-down dropdown-icon"></i>
+                            </li>
+                        </a>
+                        <div class="dropdown" id="show-dropdown">
+                            <a href="tents.html">
+                                <li>Tents</li>
+                            </a>
+                            <a href="sleeping.html">
+                                <li>Sleeping</li>
+                            </a>
+                            <a href="cookware.html">
+                                <li>Cookware</li>
+                            </a>
+                            <a href="tableware.html">
+                                <li>Tableware</li>
+                            </a>
+                            <a href="coolbox.html">
+                                <li>Cool Box</li>
+                            </a>
+                            <a href="bottles.html">
+                                <li>Bottles</li>
+                            </a>
+                            <a href="lighting.html">
+                                <li>Lighting</li>
+                            </a>
+                        </div>
+                        <a href="furniture.html">
+                            <li>Furniture</li>
+                        </a>
+                        <a href="offers-and-packages.html">
+                            <li>Offers and Packages</li>
+                        </a>
+                        <a href="reviews.html">
+                            <li>Reviews</li>
+                        </a>
+                        <a href="basket.html">
+                            <li>Basket</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container pt-90">
+        <h1 class="camping-eq-title">Cookware</h1>
+        <h2 class="camping-eq-subtitle">Presenting 19 cookware within the camping equipment category</h2>
+        <div class="equip-container offers">
+            <div class="camp-equip">
+                <!-- cooking -->
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/cook1.jpeg" alt="Easy Camp Cook Set">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Easy Camp</span>
+                        <p>Adventure Cook Set</p>
+                        <span class="price">$29</span>
+                    </div>
+                    <div class="percent">20% Off</div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/cook12.jpeg" alt="Outwell Collaps Kettle">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Outwell</span>
+                        <p>Outwell Collaps Kettle 1.5L Navy</p>
+                        <span class="price">$39</span>
+                    </div>
+                    <div class="percent">20% Off</div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/cook16.jpeg" alt="Redwood Leisure Portable Gas Stove">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Redwood</span>
+                        <p>Leisure Portable Gas Stove</p>
+                        <span class="price">$24</span>
+                    </div>
+                    <div class="percent">20% off</div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/cook2.jpeg" alt="Snow Peak Chopping Board">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Snow Peak</span>
+                        <p>Chopping Board Set</p>
+                        <span class="price">$35</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/cook3.jpeg" alt="Outwell Locking Grill Tongs">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Outwell</span>
+                        <p>Locking Grill Tongs</p>
+                        <span class="price">$7</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/cook4.jpeg" alt="Robens Pan">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Robens</span>
+                        <p>Modoc Pan 2023</p>
+                        <span class="price">$19</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/cook5.jpeg" alt="Robens Bighorn 3 Legged Pan">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Robens</span>
+                        <p>Bighorn 3 Legged Pan 2023</p>
+                        <span class="price">$49</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/cook6.jpeg" alt="Petromax Oven">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Petromax</span>
+                        <p>Cast Iron Dutch Oven 1.6L</p>
+                        <span class="price">$53</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/cook7.jpeg" alt="Snow Peak Fireplace Grill Pro">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Snow Peak</span>
+                        <p>Fireplace Grill Pro</p>
+                        <span class="price">$51</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/cook8.jpeg" alt="Robens Water Heater">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Robens</span>
+                        <p>Bering Water Heater</p>
+                        <span class="price">$60</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/cook9.jpeg" alt="Outwell Tea Break Kettle">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">OutWell</span>
+                        <p>Tea Break Kettle</p>
+                        <span class="price">$23</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/cook10.jpeg" alt="Quest Stainless Steel Whistling Kettle">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Quest</span>
+                        <p>Stainless Steel Whistling Kettle</p>
+                        <span class="price">$16</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/cook11.jpeg" alt="Kelly Kettle Trekker Kettle">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Kelly Kettle</span>
+                        <p>Trekker Kettle</p>
+                        <span class="price">$49</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/cook13.jpeg" alt="Kelly Kettle Trekker Kit">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Kelly Kettle</span>
+                        <p>Trekker Kit</p>
+                        <span class="price">$75</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/cook14.jpeg" alt="Campart Alberta Travel Gas Stove">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Campart</span>
+                        <p>Alberta Travel Gas Stove</p>
+                        <span class="price">$54</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/cook15.jpeg" alt="Outwell Appetizer Solo Stove">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Outwell</span>
+                        <p>Appetizer Solo Stove</p>
+                        <span class="price">$29</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <!-- fire lighting -->
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/fire1.jpeg" alt="Robens Fire Steel">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Robenss</span>
+                        <p>Fire Steel</p>
+                        <span class="price">$6</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/fire2.png" alt="Go System Mach 1 Single Flame Lighter">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Go System</span>
+                        <p>Mach 1 Single Flame Lighter</p>
+                        <span class="price">$7</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/fire3.jpeg" alt="Easy Camp Fire Starter">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Easy Camp</span>
+                        <p>Fire Starter</p>
+                        <span class="price">$6</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="text">
+		    <p>&copy;opyRight Reserved 2023.</p>
+            <div class="icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+            <p>This website developed by Nyan Linn Htet not commercial website only for educational purpose.</p>
+        </div>
+    </footer>
+</body>
+</html>

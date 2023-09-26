@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Camping Company</title>
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .nav-menu ul > a:first-child::after {
+            width: 0%;
+        }
+        .nav-menu ul > a:hover::after {
+            width: 100%;
+        }
+        .nav-menu ul > a:nth-child(2)::after {
+            width: 100%;
+        }
+        @media(max-width: 992px) {
+            .nav-menu ul > a:first-child {
+                color: white;
+            }
+            .nav-menu ul > a:nth-child(2) {
+                color: #000;
+            }
+            .nav-menu ul .dropdown > a:nth-child(4) {
+                color: #000;
+            }
+            .nav-menu ul > a:hover {
+                color: #000;
+            }
+            .nav-menu ul .dropdown a:hover {
+                color: #000;
+            }
+            .nav-menu ul > a::after {
+                background-color: #000;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">RCC</a>
+                    <div class="img-box">
+                        <img src="imgs/logo.png" alt="LOGO IMG" class="logo-img">
+                    </div>
+                </div>
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox" class="toggle">
+                    <span class="bars" id="bar1"></span>
+                    <span class="bars" id="bar2"></span>
+                    <span class="bars" id="bar3"></span>
+                </label>
+                <div class="nav-menu">
+                    <ul>
+                        <a href="index.html">
+                            <li>Home</li>
+                        </a>
+                        <a href="#show-dropdown">
+                            <li>Camping Equipment 
+                                <i class="fas fa-chevron-down dropdown-icon"></i>
+                            </li>
+                        </a>
+                        <div class="dropdown" id="show-dropdown">
+                            <a href="tents.html">
+                                <li>Tents</li>
+                            </a>
+                            <a href="sleeping.html">
+                                <li>Sleeping</li>
+                            </a>
+                            <a href="cookware.html">
+                                <li>Cookware</li>
+                            </a>
+                            <a href="tableware.html">
+                                <li>Tableware</li>
+                            </a>
+                            <a href="coolbox.html">
+                                <li>Cool Box</li>
+                            </a>
+                            <a href="bottles.html">
+                                <li>Bottles</li>
+                            </a>
+                            <a href="lighting.html">
+                                <li>Lighting</li>
+                            </a>
+                        </div>
+                        <a href="furniture.html">
+                            <li>Furniture</li>
+                        </a>
+                        <a href="offers-and-packages.html">
+                            <li>Offers and Packages</li>
+                        </a>
+                        <a href="reviews.html">
+                            <li>Reviews</li>
+                        </a>
+                        <a href="basket.html">
+                            <li>Basket</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container pt-90">
+        <h1 class="camping-eq-title">Tableware</h1>
+        <h2 class="camping-eq-subtitle">Presenting 10 tableware within the camping equipment category</h2>
+        <div class="equip-container">
+            <div class="camp-equip">
+                <!-- Dinner set -->
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/food1.jpeg" alt="Outwell Gala 2 Person Dinner Set">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Outwell</span>
+                        <p>Gala 2 Person Dinner Set</p>
+                        <span class="price">$14</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/food2.jpeg" alt="Outwell Collaps Food Box">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Outwell</span>
+                        <p>Collaps Food Box</p>
+                        <span class="price">$10</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/food3.jpeg" alt="Outwell Collaps Bowl L Navy Night">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Outwell</span>
+                        <p>Collaps Bowl L Navy Night</p>
+                        <span class="price">$9</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/food3.jpeg" alt="Outwell Collaps Bowl L Navy Night">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Outwell</span>
+                        <p>Collaps Bowl L Navy Night</p>
+                        <span class="price">$9</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/food4.jpeg" alt="Outwell Box Cutlery Set">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Outwell</span>
+                        <p>Box Cutlery Set</p>
+                        <span class="price">$21</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/food5.jpeg" alt="Outwell Chena Knife Set w/Peeler & Scissors">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Outwell</span>
+                        <p>Chena Knife Set</p>
+                        <span class="price">$6</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/food6.jpeg" alt="Easy Camp Family Cutlery 12 Piece Set">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Easy Camp</span>
+                        <p>Family Cutlery 12 Piece Set</p>
+                        <span class="price">$16</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/food7.jpeg" alt="Easy Camp Aluminium Adventure Mug">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Easy Camp</span>
+                        <p>Aluminium Adventure Mug</p>
+                        <span class="price">$4</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/food8.jpeg" alt="Robens Tongass Single Enamel Set">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Robens</span>
+                        <p>Tongass Single Enamel Set</p>
+                        <span class="price">$21</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/cookware/food9.jpeg" alt="Kelly Kettle Camping Plates">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Kelly Kettle</span>
+                        <p>Camping Plates</p>
+                        <span class="price">$15</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="text">
+		    <p>&copy;opyRight Reserved 2023.</p>
+            <div class="icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+            <p>This website developed by Nyan Linn Htet not commercial website only for educational purpose.</p>
+        </div>
+    </footer>
+</body>
+</html>

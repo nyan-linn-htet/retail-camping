@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Camping Company</title>
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .nav-menu ul a:first-child::after {
+            width: 0%;
+        }
+        .nav-menu ul a:hover::after {
+            width: 100%;
+        }
+        .nav-menu ul a:nth-child(4)::after {
+            width: 100%;
+        }
+        @media(max-width: 992px) {
+            .nav-menu ul a:first-child {
+                color: white;
+            }
+            .nav-menu ul a:nth-child(4) {
+                color: black;
+            }
+            .nav-menu ul a:hover {
+                color: black;
+            }
+            .nav-menu ul a::after {
+                background-color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">RCC</a>
+                    <div class="img-box">
+                        <img src="imgs/logo.png" alt="LOGO IMG" class="logo-img">
+                    </div>
+                </div>
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox" class="toggle">
+                    <span class="bars" id="bar1"></span>
+                    <span class="bars" id="bar2"></span>
+                    <span class="bars" id="bar3"></span>
+                </label>
+                <div class="nav-menu">
+                    <ul>
+                        <a href="index.html">
+                            <li>Home</li>
+                        </a>
+                        <a href="#show-dropdown">
+                            <li>Camping Equipment 
+                                <i class="fas fa-chevron-down dropdown-icon"></i>
+                            </li>
+                        </a>
+                        <ul class="dropdown" id="show-dropdown">
+                            <a href="tents.html">
+                                <li>Tents</li>
+                            </a>
+                            <a href="sleeping.html">
+                                <li>Sleeping</li>
+                            </a>
+                            <a href="cookware.html">
+                                <li>Cookware</li>
+                            </a>
+                            <a href="dinner.html">
+                                <li>Dinner Set</li>
+                            </a>
+                            <a href="coolbox.html">
+                                <li>Cool Box</li>
+                            </a>
+                            <a href="bottles.html">
+                                <li>Bottles</li>
+                            </a>
+                            <a href="lighting.html">
+                                <li>Lighting</li>
+                            </a>
+                        </ul>
+                        <a href="furniture.html">
+                            <li>Furniture</li>
+                        </a>
+                        <a href="offers-and-packages.html">
+                            <li>Offers and Packages</li>
+                        </a>
+                        <a href="reviews.html">
+                            <li>Reviews</li>
+                        </a>
+                        <a href="basket.html">
+                            <li>Basket</li>
+                        </a>
+                    </u>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container pt-90">
+        <h1 class="camping-eq-title">Furniture</h1>
+        <h2 class="camping-eq-subtitle">Presenting 5 furnitures within the camping equipment category</h2>
+        <div class="equip-container offers">
+            <div class="camp-equip">
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/chairs/chair5.jpeg" alt="Outwell Catamarca Arm Chair XL">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Outwell</span>
+                        <p>Catamarca Arm Chair XL</p>
+                        <span class="price">$39</span>
+                    </div>
+                    <div class="percent">20% off</div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <embed src="imgs/chairs/chair1.jpeg" alt="Outwell Trenton Chair">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Outwell</span>
+                        <p>Trenton Chair</p>
+                        <span class="price">$69</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/chairs/chair2.jpeg" alt="Summit Ashby Folding Camping Chair">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Sumit</span>
+                        <p>Ashby Folding Camping Chair</p>
+                        <span class="price">$9</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/chairs/chair3.jpeg" alt="Outwell Grenada Lake Chair">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Outwell</span>
+                        <p>Grenada Lake Chair</p>
+                        <span class="price">$114</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+                <div class="equip">
+                    <div class="eq-img">
+                        <img src="imgs/chairs/chair4.jpeg" alt="Easy Camp Arm Chair Steel Blue">
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <span class="title">Easy Camp</span>
+                        <p>Arm Chair Steel Blue</p>
+                        <span class="price">$18</span>
+                    </div>
+                    <div class="show-detail">Show Detail</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="text">
+		    <p>&copy;opyRight Reserved 2023.</p>
+            <div class="icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+            <p>This website developed by Nyan Linn Htet not commercial website only for educational purpose.</p>
+        </div>
+    </footer>
+</body>
+</html>
