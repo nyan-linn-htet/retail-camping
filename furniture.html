@@ -34,12 +34,20 @@
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container nav-container">
             <div class="navbar">
                 <div class="logo">
-                    <a href="index.html">RCC</a>
-                    <div class="img-box">
-                        <img src="imgs/logo.png" alt="LOGO IMG" class="logo-img">
+                    <a href="index.html">
+                        <span>RCC</span>
+                        <div class="img-box">
+                            <img src="imgs/logo.png" alt="LOGO IMG" class="logo-img">
+                        </div>
+                    </a>
+                    <div class="search-container">
+                        <div class="icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <input type="text" name="text" class="input" required="" placeholder="Type to search...">
                     </div>
                 </div>
                 <input type="checkbox" id="checkbox">
@@ -54,11 +62,12 @@
                             <li>Home</li>
                         </a>
                         <a href="#show-dropdown">
-                            <li>Camping Equipment 
+                            <li>
+                                Camping Equipment
                                 <i class="fas fa-chevron-down dropdown-icon"></i>
                             </li>
                         </a>
-                        <ul class="dropdown" id="show-dropdown">
+                        <div class="dropdown" id="show-dropdown">
                             <a href="tents.html">
                                 <li>Tents</li>
                             </a>
@@ -68,8 +77,8 @@
                             <a href="cookware.html">
                                 <li>Cookware</li>
                             </a>
-                            <a href="dinner.html">
-                                <li>Dinner Set</li>
+                            <a href="tableware.html">
+                                <li>Tableware</li>
                             </a>
                             <a href="coolbox.html">
                                 <li>Cool Box</li>
@@ -80,7 +89,7 @@
                             <a href="lighting.html">
                                 <li>Lighting</li>
                             </a>
-                        </ul>
+                        </div>
                         <a href="furniture.html">
                             <li>Furniture</li>
                         </a>
@@ -93,7 +102,7 @@
                         <a href="basket.html">
                             <li>Basket</li>
                         </a>
-                    </u>
+                    </ul>
                 </div>
             </div>
         </div>

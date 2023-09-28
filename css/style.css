@@ -368,6 +368,7 @@ header {
     margin-top: 1rem;
 }
 .popup-action .write-review {
+    color: #333;
     background-color: #fff;
     border: 2px solid #333;
     border-radius: 0.7rem;
@@ -516,6 +517,7 @@ header {
     transform: skew(0deg);
 }
 .submit-btn span {
+    color: #111;
     transform: skew(0deg);
   }
 .submit-btn::before {
@@ -530,7 +532,7 @@ header {
     z-index: -1;
     transition: all 0.5s;
 }
-.submit-btn:hover {
+.submit-btn:hover span {
     color: #fff;
 }
 .submit-btn:hover::before {
@@ -1379,6 +1381,10 @@ footer .icons i {
 @media(max-width: 400px) {
     .review-popup-content {
         width: 300px;
+        padding: 1rem;
+    }
+    .review-popup-content .item .text {
+        margin-left: 0.6rem;
     }
     .review-popup-content .item .text > p {
         font-size: 0.75rem;

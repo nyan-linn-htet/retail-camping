@@ -40,12 +40,20 @@
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container nav-container">
             <div class="navbar">
                 <div class="logo">
-                    <a href="index.html">RCC</a>
-                    <div class="img-box">
-                        <img src="imgs/logo.png" alt="LOGO IMG" class="logo-img">
+                    <a href="index.html">
+                        <span>RCC</span>
+                        <div class="img-box">
+                            <img src="imgs/logo.png" alt="LOGO IMG" class="logo-img">
+                        </div>
+                    </a>
+                    <div class="search-container">
+                        <div class="icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <input type="text" name="text" class="input" required="" placeholder="Type to search...">
                     </div>
                 </div>
                 <input type="checkbox" id="checkbox">
@@ -60,7 +68,8 @@
                             <li>Home</li>
                         </a>
                         <a href="#show-dropdown">
-                            <li>Camping Equipment 
+                            <li>
+                                Camping Equipment
                                 <i class="fas fa-chevron-down dropdown-icon"></i>
                             </li>
                         </a>
