@@ -109,6 +109,54 @@
     </header>
     <section class="pt-90 review-container-box">
         <h1 class="camping-eq-title">Reviews</h1>
+        <div class="review-button">
+            <a href="#review-form">
+                <button class="write-review">Write a review</button>
+            </a>
+        </div>
+        <div id="review-form" class="review-popup">
+            <div class="review-popup-content review-popup-form">
+                <div class="form">
+                    <div class="rating-stars-box">
+                        <div class="rating">
+                            <input value="5" name="rating" id="star5" type="radio" class="star-input">
+                            <label for="star5" class="star-label"></label>
+                            <input value="4" name="rating" id="star4" type="radio" class="star-input">
+                            <label for="star4" class="star-label"></label>
+                            <input value="3" name="rating" id="star3" type="radio" class="star-input">
+                            <label for="star3" class="star-label"></label>
+                            <input value="2" name="rating" id="star2" type="radio" class="star-input">
+                            <label for="star2" class="star-label"></label>
+                            <input value="1" name="rating" id="star1" type="radio" class="star-input">
+                            <label for="star1" class="star-label"></label>
+                        </div>
+                    </div>
+                    <p>Please click on a star to rate the product.</p>
+                    <div class="review-input-group">
+                        <input type="text" name="name" autocomplete="off" class="review-input" required>
+                        <label class="review-label">Name</label>
+                    </div>
+                    <div class="review-input-group">
+                        <input type="text" name="email" autocomplete="off" class="review-input" required>
+                        <label class="review-label">Email</label>
+                    </div>
+                    <div class="review-input-group">
+                        <input type="file" name="product_file" class="review-input product-file" required>
+                        <label class="review-label">Product Image</label>
+                    </div>
+                    <div class="review-input-group">
+                        <textarea name="review" cols="10" rows="4" class="review-input" required></textarea>
+                        <label class="review-label">Review</label>
+                    </div>
+                    <button class="submit-btn">
+                        <span>Submit</span>
+                    </button>
+                    <a href="#popup-cancel" class="cancel">
+                        <i class="far fa-circle-xmark"></i>
+                    </a> 
+                </div>
+            </div>
+        </div>
         <div class="review-container">
             <div class="review-item" id="review1">
                 <div class="item">
